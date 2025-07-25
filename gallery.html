@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Sugandha</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <header>
+    <h1>SUGANDHA</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html" aria-current="page">Bouquets</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <button id="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="gallery-title">Our Best Sellers</h2>
+    <div class="gallery-container">
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <figure>
+            <img src="tulip bouquet.jpg" alt="Pink and White Tulip Bouquet" loading="lazy" class="gallery-image">
+            <figcaption class="item-info">
+              <h3>Pink & White Tulip Bouquet</h3>
+              <p>Graceful tulip symbolizing affection and care.</p>
+              <div class="price-buy">
+                <p class="price">Price: NPR 850</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="rose bouquet.jpg" alt="Red Rose Bouquet" loading="lazy" class="gallery-image">
+            <figcaption class="item-info">
+              <h3>Red Rose Bouquet</h3>
+              <p>Elegant bloom representing purity and peace.</p>
+              <div class="price-buy">
+                <p class="price">Price: NPR 800</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="baby breath bouquet.jpg" alt="Baby Breath Bouquet" loading="lazy" class="gallery-image">
+            <figcaption class="item-info">
+              <h3>Baby Breath Bouquet</h3>
+              <p>Delicate white flower symbolizing purity, innocence, and everlasting love.</p>
+              <div class="price-buy">
+                <p class="price">Price: NPR 980</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="pink lily bouquet.jpg" alt="Pink Lily Bouquet" loading="lazy" class="gallery-image">
+            <figcaption class="item-info">
+              <h3>Pink Lily Bouquet</h3>
+              <p>Elegant blooms that symbolize love, admiration, and compassion.</p>
+              <div class="price-buy">
+                <p class="price">Price: NPR 950</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="white lilies bouquet.jpg" alt="White Lily Bouquet" loading="lazy" class="gallery-image">
+            <figcaption class="item-info">
+              <h3>White Lily Bouquet</h3>
+              <p>Elegant blooms that symbolize admiration.</p>
+              <div class="price-buy">
+                <p class="price">Price: NPR 950</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="daisy bouquet.jpg" alt="Daisy Bouquet" loading="lazy" class="gallery-image">
+            <figcaption class="item-info">
+              <h3>Daisy Bouquet</h3>
+              <p>Symbolize innocence, purity, and new beginnings.</p>
+              <div class="price-buy">
+                <p class="price">Price: NPR 750</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="sunflower bouquet.jpg" alt="Sunflower Bouquet" loading="lazy" class="gallery-image">
+            <figcaption class="item-info">
+              <h3>Sunflower Bouquet</h3>
+              <p>Bright blooms symbolizing happiness, warmth, and loyalty.</p>
+              <div class="price-buy">
+                <p class="price">Price: NPR 1000</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="baby breath and rose bouquet.jpg" alt="Baby Breath & Rose Bouquet" loading="lazy" class="gallery-image">
+            <figcaption class="item-info">
+              <h3>Baby Breath & Rose Bouquet</h3>
+              <p>Symbolizing purity and love in perfect harmony.</p>
+              <div class="price-buy">
+                <p class="price">Price: NPR 1200</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="pink rose bouquet.jpg" alt="Pink Rose Bouquet" loading="lazy" class="gallery-image">
+            <figcaption class="item-info">
+              <h3>Pink Rose Bouquet</h3>
+              <p>Elegant bloom representing purity and peace.</p>
+              <div class="price-buy">
+                <p class="price">Price: NPR 900</p>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeModal()">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img id="lightbox-img" src="" alt="Enlarged view" class="lightbox-image">
+      <div class="lightbox-caption"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p><strong>Phone:</strong> +977-9704788524</p>
+        <p><strong>Email:</strong> sugandha@gmail.com</p>
+        <p><strong>Location:</strong> Kathmandu, Nepal</p>
+      </div>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" aria-label="Google"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#" aria-label="Skype"><ion-icon name="logo-skype"></ion-icon></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Sugandha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>

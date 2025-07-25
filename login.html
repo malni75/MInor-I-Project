@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugandha - Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <h1>SUGANDHA</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Bouquets</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" aria-current="page">Login</a>
+      <button id="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main class="login-container">
+    <div class="login-form">
+      <h2>Login Here</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-actions">
+          <button class="btn login-btn" type="submit">Login</button>
+          <button class="btn register-btn" type="button">Register</button>
+        </div>
+      </form>
+
+      <p class="signup-link">Don't have an account?<br>
+        <a href="#" aria-label="Sign up">Sign up here</a>
+      </p>
+      
+      <p class="social-login-text">Login with</p>
+
+      <div class="social-icons">
+        <a href="#" aria-label="Login with Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" aria-label="Login with Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" aria-label="Login with Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" aria-label="Login with Google"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#" aria-label="Login with Skype"><ion-icon name="logo-skype"></ion-icon></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p><strong>Phone:</strong> +977-9704788524</p>
+        <p><strong>Email:</strong> sugandha@gmail.com</p>
+        <p><strong>Location:</strong> Kathmandu, Nepal</p>
+      </div>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" aria-label="Google"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#" aria-label="Skype"><ion-icon name="logo-skype"></ion-icon></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Sugandha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
